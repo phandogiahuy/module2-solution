@@ -1,1 +1,121 @@
+div div.ck{
+    font-size: large;
+    font-weight:bold;
+    background-color: aqua;  
+    border: 1px solid;
+    width: 100px;
+    padding-left: 12px;
+    position: relative;
+    left: 444px;
+}
+div div.beef{
+    font-size: large;
+    font-weight:bold;
+    background-color:coral;
+    color: aliceblue;
+    border: 1px black solid;
+    width: 100px;
+    padding-left: 30px;
+    position: relative;
+    left: 444px;
+}
+div div.pig{
+    background-color:cadetblue;
+    font-size: large;
+    font-weight:bold;
+    border: 1px solid;
+    width: 100px;
+    padding-left: 30px;
+    position: relative;
+    left: 444px;
+}
+div.box1{
+    border: 1px solid ;
+    background-color: antiquewhite;
+    width: 30%;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+div.box2{
+    border: 1px solid ;
+    background-color: antiquewhite;
+    width: 30%;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+div.box3{
+    border: 1px solid ;
+    background-color: antiquewhite;  
+    width: 30%;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+div.content{
+    padding:10px;
+}
+body{
+    margin:50px;
+}
+*{
+    box-sizing: border-box;
+}
+@media(min-width:992px){
+    div.box1,div.box2,div.box3{
+        float:left;  
+    }
+    div.box1{
+        width:33,33%;
+    }
+    div.box2{
+        width:33,33%;
+    }
+    div.box3{
+        width: 33,33%;
+}
+}
 
+@media(min-width:768px) and (max-width:991px){
+       div.box1,div.box2,div.box3{
+           float:left;  
+           margin-left:15px;
+       }
+       div div.ck{
+        position: relative;
+        left: 200px;
+       }
+       div div.beef{
+        position: relative;
+        left: 233px;
+       }
+       div div.pig{
+        position: relative;
+        left: 567px;
+       }
+    div.box1{
+        width:45%;
+    }
+    div.box2{
+        width:50%;
+    }
+    div.box3{
+        width: 100%;
+    }
+}
+@media (max-width:767px){
+    div div.ck,div div.beef,div div.pig{
+        position: relative;
+        left: 453px;
+       }
+    div.box1{
+        width:100%;
+    }
+    div.box2{
+        width:100%;
+    }
+    div.box3{
+        width: 100%;
+    }
+}
