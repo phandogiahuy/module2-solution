@@ -6,7 +6,6 @@ div div.ck{
     width: 100px;
     padding-left: 12px;
     position: relative;
-    left: 444px;
 }
 div div.beef{
     font-size: large;
@@ -17,7 +16,7 @@ div div.beef{
     width: 100px;
     padding-left: 30px;
     position: relative;
-    left: 444px;
+    
 }
 div div.pig{
     background-color:cadetblue;
@@ -27,15 +26,20 @@ div div.pig{
     width: 100px;
     padding-left: 30px;
     position: relative;
-    left: 444px;
 }
 div.box1{
-    border: 1px solid ;
+    border: 1px solid;
     background-color: antiquewhite;
     width: 30%;
     border-radius: 4px;
     margin-left: 10px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
 }
 div.box2{
     border: 1px solid ;
@@ -44,6 +48,12 @@ div.box2{
     border-radius: 4px;
     margin-left: 10px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
 }
 div.box3{
     border: 1px solid ;
@@ -52,6 +62,12 @@ div.box3{
     border-radius: 4px;
     margin-left: 10px;
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
 }
 div.content{
     padding:10px;
@@ -82,18 +98,6 @@ body{
            float:left;  
            margin-left:15px;
        }
-       div div.ck{
-        position: relative;
-        left: 200px;
-       }
-       div div.beef{
-        position: relative;
-        left: 233px;
-       }
-       div div.pig{
-        position: relative;
-        left: 567px;
-       }
     div.box1{
         width:45%;
     }
@@ -105,10 +109,6 @@ body{
     }
 }
 @media (max-width:767px){
-    div div.ck,div div.beef,div div.pig{
-        position: relative;
-        left: 453px;
-       }
     div.box1{
         width:100%;
     }
